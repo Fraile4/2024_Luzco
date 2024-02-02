@@ -1,0 +1,581 @@
+digraph {
+    graph [pad="0.5", nodesep="0.5", ranksep="2"];
+    node [shape=box]
+    rankdir=LR;
+
+
+/* RFPko funtzionalitateak */
+
+RFP_betekizunak [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="brown1"><i>RFP betekizunak</i></td></tr>
+  <tr><td align = "left" port="1">BETEKIZUN FUNTZIONALAK</td></tr>
+  <tr><td align = "left" port="2">  - Inbentarioa kudeatu</td></tr>
+  <tr><td align = "left" port="3">  - Menua kudeatu</td></tr>
+  <tr><td align = "left" port="4">  - Trebakuntza</td></tr>
+  <tr><td align = "left" port="5">  - Analitika txostenak</td></tr>
+  <tr><td align = "left" port="6">  - Markaren marketina</td></tr>
+  <tr><td align = "left" port="7">  - Egur-labe, sukalde eta lokalak</td></tr>
+  <tr><td align = "left" port="8">  - Sistemen integrazioa</td></tr>
+  <tr><td align = "left" port="9">  - Frankizia osoa kontrolatu</td></tr>
+  <tr><td align = "left" port="10">  - Salmenta presentziala</td></tr>
+  <tr><td align = "left" port="11">  - Salmentak online</td></tr>
+  <tr><td align = "left" port="20">BETEKIZUN EZ FUNTZIONALAK</td></tr>
+  <tr><td align = "left" port="21">  - Esperientzia (5 urte minimo)</td></tr>
+  <tr><td align = "left" port="22">  - Digitalizazio jakinduria eta trebezia</td></tr>
+  <tr><td align = "left" port="23">  - CMMIren 2. mailaren ziurtagiria edo lortzeko prozesuan</td></tr>
+  <tr><td align = "left" port="24">  - Soluzioaren sendotasuna eta mantengarritasuna</td></tr>
+  <tr><td align = "left" port="25">  - Prozesu eta praktika estandarizatuen transmisioa eta kaliate-bermea </td></tr>
+  <tr><td align = "left" port="26">  - Plataforma zentralizatua kudeaketa eta prestakuntzaren euskarrirako</td></tr>
+ 
+</table>>];
+
+
+
+
+/* Funtzionalitateen erabilpen-kasuak */
+SalmentakOnline [label=<
+	<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>SalmentakOnline</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">KatalogoanBilatu</td></tr>
+  <tr><td port="3">ProduktuaGurdira</td></tr>
+  <tr><td port="4">GurdikoaErosi</td></tr>
+  <tr><td port="5">GurdikoaOrdaindu</td></tr>
+  <tr><td port="6">EntregakMonitorizatu</td></tr>
+  <tr><td port="7">ProduktuaItzuli</td></tr>
+  <tr><td port="8">KexenKudeaketa</td></tr>
+  <tr><td port="9">IritzienKudealeta</td></tr>
+</table>>];
+
+SalmentaPresentziala [label=<
+	<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>SalmentaPresentziala</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">KatalogoanBilatu</td></tr>
+  <tr><td port="3">ProduktuaGurdira</td></tr>
+  <tr><td port="4">GurdikoaErosi</td></tr>
+  <tr><td port="5">GurdikoaOrdaindu</td></tr>
+  <tr><td port="6">EntregakMonitorizatu</td></tr>
+  <tr><td port="7">ProduktuaItzuli</td></tr>
+  <tr><td port="8">KexenKudeaketa</td></tr>
+  <tr><td port="9">IritzienKudealeta</td></tr>
+</table>>];
+
+InbentarioaKudeatu [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>InbentarioaKudeatu</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">EgoeraAztertu</td></tr>
+  <tr><td port="3">BeharDenaErosi</td></tr>
+  <tr><td port="4">ErositakoaJaso</td></tr>
+  <tr><td port="5">GutxituenAlarma</td></tr>
+  <tr><td port="6">HornitzaileakKudeatu</td></tr>
+  <tr><td port="7">ProduktuaItzuli</td></tr>
+  <tr><td port="8">KexenKudeaketa</td></tr>
+  <tr><td port="9">IritzienKudealeta</td></tr>
+</table>>];
+
+
+
+MenuakKudeatu [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>MenuakKudeatu</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">PlaterakEguneratu</td></tr>
+  <tr><td port="3">PlaterenIkerketa</td></tr>
+  <tr><td port="4">PlaterakEzabatu</td></tr>
+  <tr><td port="5">KartaArgitaratu</td></tr>
+  <tr><td port="6">PlaterenEstatistika</td></tr>
+  <tr><td port="7">ProduktuaItzuli</td></tr>
+  <tr><td port="8">PlaterenKexak</td></tr>
+  <tr><td port="9">PlaterenIradokizunak</td></tr>
+</table>>];
+
+Trebakuntza [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>Trebakuntza</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">IkastaroakBistaratu</td></tr>
+  <tr><td port="3">IkasleakKudeatu</td></tr>
+  <tr><td port="4">EbaluazioAgiria</td></tr>
+  <tr><td port="5">Lan-fluxuaDefinitu</td></tr>
+  <tr><td port="6">Lan-fluxuakKudeatu</td></tr>
+  <tr><td port="7">Lan-fluxuaAplikatu</td></tr>
+  <tr><td port="8">IkastaroenKexak</td></tr>
+  <tr><td port="9">IkastaroenIradokizunak</td></tr>
+</table>>];
+
+
+
+
+AnalitikaTxostenak [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>AnalitikaTxostenak</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">SalmentakBistaratu</td></tr>
+  <tr><td port="3">InbentarioBilakaera</td></tr>
+  <tr><td port="4">HornitzaileenSailkapena</td></tr>
+  <tr><td port="5">LehenGaienBilakaera</td></tr>
+  <tr><td port="6">PlaterenBilakaera</td></tr>
+  <tr><td port="7">TrebezienBilakaera</td></tr>
+  <tr><td port="8">KexenEstatistika</td></tr>
+  <tr><td port="9">IradokizunenSailkapena</td></tr>
+</table>>];
+
+
+MarkarenMarketina [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>MarkarenMarketina</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">MarketinarenBilakaera</td></tr>
+  <tr><td port="3">MarketinaAdostu</td></tr>
+  <tr><td port="4">KanpainaDiseinatu</td></tr>
+  <tr><td port="5">KanpainaKontratatu</td></tr>
+  <tr><td port="6">KanpainakKudeatu</td></tr>
+  <tr><td port="7">KanpainaOrdaindu</td></tr>
+  <tr><td port="8">AkatsenHistorikoa</td></tr>
+  <tr><td port="9">IradokizunenHistorikoa</td></tr>
+</table>>];
+
+/* Gidoiak izenean ez */
+"Egur-labeSukaldeaLokala" [label=<                       
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>Egur-labeSukaldeaLokala</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">LokalenKudeaketa</td></tr>
+  <tr><td port="3">LokalenDiseinua</td></tr>
+  <tr><td port="4">LokalerakoErosketak</td></tr>
+  <tr><td port="5">LokalenHornikuntza</td></tr>
+  <tr><td port="6">Egur-labeaKudeatu</td></tr>
+  <tr><td port="7">AberiakEtaAseguruak</td></tr>
+  <tr><td port="8">HornitzaileenKudeaketa</td></tr>
+  <tr><td port="9">IradokizunenHistorikoa</td></tr>
+</table>>];
+
+SistemenIntegrazioa [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>SistemenIntegrazioa</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">ArkitekturaBistaratu</td></tr>
+  <tr><td port="3">KonfigurazioakKudeatu</td></tr>
+  <tr><td port="4">InterfazeakDiseinatu</td></tr>
+  <tr><td port="5">NegozioErregelakKudeatu</td></tr>
+  <tr><td port="6">ProzesuakKudeatu</td></tr>
+  <tr><td port="7">ProzesuakExekutatu</td></tr>
+  <tr><td port="8">EmaitzakAnalizatu</td></tr>
+  <tr><td port="9">AzpiegituraBalidatu</td></tr>
+</table>>];
+
+
+FrankiziaOsoaKontrolatu [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>FrankiziaOsoaKontrolatu</i></td></tr>
+  <tr><td port="1">AktoeakErregistratu</td></tr>
+  <tr><td port="2">OnlineSalmenta</td></tr>
+  <tr><td port="3">InbentarioOsoa</td></tr>
+  <tr><td port="4">MenuEtaPlaterak</td></tr>
+  <tr><td port="5">Trebakuntza</td></tr>
+  <tr><td port="6">NegozioaAnalizatu</td></tr>
+  <tr><td port="7">Marketina</td></tr>
+  <tr><td port="8">Lokalak</td></tr>
+  <tr><td port="9">Azpiegitura</td></tr>
+</table>>];
+
+SalmentaPresentziala [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="green1"><i>SalmentaPresentziala</i></td></tr>
+  <tr><td port="1">Kautotu</td></tr>
+  <tr><td port="2">OnlineEskaerak</td></tr>
+  <tr><td port="3">ErosketakEgin</td></tr>
+  <tr><td port="4">EkoizpenPlana</td></tr>
+  <tr><td port="5">Tutorizazioak</td></tr>
+  <tr><td port="6">Erreserbak</td></tr>
+  <tr><td port="7">LokalaGirotu</td></tr>
+  <tr><td port="8">LokalaKudeatu</td></tr>
+  <tr><td port="9">PertsonalaKudeatu</td></tr>
+</table>>];
+
+/* Funtzionalitateen analisi eta diseinua */
+"OpenUP eta UML arefaktuak" [label=<
+	<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="azure"><i>Metodologia(OpenUp) eta UML arefaktuak</i></td></tr>
+  <tr><td align = "left" port="0">OPENUP ARTEFAKTUAK</td></tr>
+  <tr><td align = "left" port="1">  - Betekizunak</td></tr>
+  <tr><td align = "left" port="2">  - Arkitektura</td></tr>
+  <tr><td align = "left" port="3">  - Inplementazioa</td></tr>
+  <tr><td align = "left" port="4">  - Probak</td></tr>
+  <tr><td align = "left" port="5">  - Proiektuaren kudeaketa</td></tr>
+  <tr><td align = "left" port="6">  - Ingurunea</td></tr>
+  <tr><td align = "left" port="7">  - Konfigurazioa</td></tr>
+  <tr><td align = "left" port="8">UML EREDUAK</td></tr>
+  <tr><td align = "left" port="9">  - Erabilpen-kasuen eredua</td></tr>
+  <tr><td align = "left" port="10">     - Funtzionalitateak</td></tr>
+  <tr><td align = "left" port="11">        - Erabilpen-kasuen diagrama</td></tr>
+  <tr><td align = "left" port="12">        - Aktoreak</td></tr>
+  <tr><td align = "left" port="13">        - Erabilpen-kasuen gauzatzeak</td></tr>
+  <tr><td align = "left" port="14">           - Jarduera diagrama</td></tr>
+  <tr><td align = "left" port="15">  - Analisi eredua</td></tr>
+  <tr><td align = "left" port="16">      - Funtzionalitateak</td></tr>
+  <tr><td align = "left" port="17">          - Analisi-klaseen diagrama</td></tr>
+  <tr><td align = "left" port="18">         - Interfaze analisi-klaseak</td></tr>
+  <tr><td align = "left" port="19">         - Kontrol analisi-klaseak</td></tr>
+  <tr><td align = "left" port="20">         - Entitate analisi-klaseak</td></tr>
+  <tr><td align = "left" port="21">         - Erabilpen-kasuen gauzatzea</td></tr>
+  <tr><td align = "left" port="22">             - Oinarrizko-fluxuaren Sekuentzia diagrama</td></tr>
+  <tr><td align = "left" port="23">             - Fluxu alternatiboen Sekuentzia diagrama</td></tr>
+</table>>];
+
+/* Produktuen arkitektura */
+Arkitektura [label=<
+	<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="honeydew"><i>Arkitektura konfiguragarria</i></td></tr>
+  <tr><td align = "left" port="1">INTERFAZEA</td></tr>
+  <tr><td align = "left" port="2">     - Drupal</td></tr>
+  <tr><td align = "left" port="3">     - WordPress</td></tr>
+  <tr><td align = "left" port="4">     - Joomla</td></tr>
+  <tr><td align = "left" port="5">     - Typo3</td></tr>
+  <tr><td align = "left" port="6">     - Silverstripe</td></tr>
+  <tr><td align = "left" port="7">     - Concrete5</td></tr>
+  <tr><td align = "left" port="8">     - Umbraco</td></tr>
+  <tr><td align = "left" port="9">     - Grav</td></tr>
+  <tr><td align = "left" port="10">     - Contao</td></tr>
+  <tr><td align = "left" port="11">     - Sitefinity</td></tr>
+  <tr><td align = "left" port="12">     - DotCMS</td></tr>
+  <tr><td align = "left" port="13">     - Sitecore</td></tr>
+  <tr><td align = "left" port="14">     - Refinery</td></tr>
+  <tr><td align = "left" port="15">     - Magnolia</td></tr>
+  <tr><td align = "left" port="16">KONTROLA</td></tr>
+  <tr><td align = "left" port="17">     - Soluzio-osagaiak </td></tr>
+  <tr><td align = "left" port="18">         - Lan-fluxu modelatzailea </td></tr> 
+  <tr><td align = "left" port="19">             - Grphviz(dot)+Gephi(grphml)+Protege(COOL-CLIPS)</td></tr> 
+  <tr><td align = "left" port="20">             - dot metamodeloa + COOL metamodeloa + transformazioa</td></tr> 
+  <tr><td align = "left" port="21">         - Lan-fluxu exekutatzailea </td></tr> 
+  <tr><td align = "left" port="22">         - Prototipoak </td></tr> 
+  <tr><td align = "left" port="23">         - Produktuak </td></tr>
+  <tr><td align = "left" port="24">         - Eskuliburuak </td></tr>
+  <tr><td align = "left" port="25">     - Oinarri-osagaiak </td></tr>
+  <tr><td align = "left" port="26">         - Inferentzia motorrak</td></tr>
+  <tr><td align = "left" port="27">            - CLIPS</td></tr>
+  <tr><td align = "left" port="28">            - Drools</td></tr>
+  <tr><td align = "left" port="29">            - Jess</td></tr>
+  <tr><td align = "left" port="30">            - Sparkling</td></tr>
+  <tr><td align = "left" port="31">ENTITATEAK</td></tr>
+  <tr><td align = "left" port="32">     - Oracle</td></tr>
+  <tr><td align = "left" port="33">     - DB2</td></tr>
+  <tr><td align = "left" port="34">     - PostgreSQL</td></tr>
+  <tr><td align = "left" port="35">     - SQLServer</td></tr>
+  <tr><td align = "left" port="36">     - SQLite</td></tr>
+  <tr><td align = "left" port="37">     - MySQL</td></tr>
+  <tr><td align = "left" port="37">     - Fitxategiak</td></tr>
+</table>>];
+
+/* User aceptance Test  */
+
+UserAceptanceTest [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="brown1"><i>User aceptance Test </i></td></tr>
+  <tr><td align = "left" port="1">Proiektuaren laburpena</td></tr>
+  <tr><td align = "left" port="2">Ezaugarri berriak</td></tr>
+  <tr><td align = "left" port="3">Betekizun funtzionalak</td></tr>
+  <tr><td align = "left" port="4">  - Inbentarioa kudeatu</td></tr>
+  <tr><td align = "left" port="5">  - Menua kudeatu</td></tr>
+  <tr><td align = "left" port="6">  - Trebakuntza</td></tr>
+  <tr><td align = "left" port="7">  - Analitika txostenak</td></tr>
+  <tr><td align = "left" port="8">  - Markaren marketina</td></tr>
+  <tr><td align = "left" port="9">  - Egur-labe, sukalde eta lokalak</td></tr>
+  <tr><td align = "left" port="10">  - Sistemen integrazioa</td></tr>
+  <tr><td align = "left" port="11">  - Frankizia osoa kontrolatu</td></tr>
+  <tr><td align = "left" port="12">  - Salmenta presentziala</td></tr>
+  <tr><td align = "left" port="13">  - Salmentak online</td></tr>
+  <tr><td align = "left" port="14">Soluzio teknikoaren diseinua</td></tr>
+  <tr><td align = "left" port="15">  - Interfazea</td></tr>
+  <tr><td align = "left" port="16">  - Kontrola</td></tr>
+  <tr><td align = "left" port="17">     - Soluzio-osagaiak </td></tr>
+  <tr><td align = "left" port="18">         - Egitura</td></tr> 
+  <tr><td align = "left" port="19">         - Exekutatzaileak </td></tr> 
+  <tr><td align = "left" port="20">     - Prototipoak </td></tr> 
+  <tr><td align = "left" port="21">     - Produktuak </td></tr>
+  <tr><td align = "left" port="22">     - Eskuliburuak </td></tr>
+  <tr><td align = "left" port="23">     - Oinarri-osagaiak </td></tr>
+  <tr><td align = "left" port="24">         - Inferentzia motorrak</td></tr>
+  <tr><td align = "left" port="25">            - Clips</td></tr>
+  <tr><td align = "left" port="26">            - Drools</td></tr>
+  <tr><td align = "left" port="27">  - Kontrola</td></tr>
+  <tr><td align = "left" port="28">     - MySQL</td></tr>
+  <tr><td align = "left" port="29">Kalitate-berme proben script</td></tr>
+  <tr><td align = "left" port="30">Kalitate-berme proben plana</td></tr>
+  <tr><td align = "left" port="31">Probatuko diren ezaugarriak</td></tr>
+  <tr><td align = "left" port="32">Probatuko ez diren ezaugarriak</td></tr>
+  <tr><td align = "left" port="33">Arduradunak</td></tr>
+  <tr><td align = "left" port="34">Proben konfigurazioa eta exekuzioa</td></tr>
+  <tr><td align = "left" port="35">Proben planifikazioa</td></tr>
+  <tr><td align = "left" port="36">Emaitzen azterketa</td></tr>
+  <tr><td align = "left" port="37">Gelditze eta abiatze irizpideak</td></tr>
+  <tr><td align = "left" port="38">Entregagarriak</td></tr>
+</table>>];
+
+/* RFP bidez eskatutako proposamenaren ebaluazioa  */
+
+ProposamenarenEbaluazioa [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="brown1"><i>Proposamenaren ebaluazioa</i></td></tr>
+  <tr><td align = "left" port="0">Kostuak</td></tr>
+  <tr><td align = "left" port="2">  -  Project</td></tr>
+  <tr><td align = "left" port="2">  -  Maintenance</td></tr>
+  <tr><td align = "left" port="2">  -  Infrastructure</td></tr>
+  <tr><td align = "left" port="2">  -  Consultant</td></tr>
+  <tr><td align = "left" port="2">  -  License</td></tr>
+  <tr><td align = "left" port="2">  -  Training</td></tr>
+  <tr><td align = "left" port="2">  -  Installation</td></tr>
+  <tr><td align = "left" port="2">  -  Upgrading</td></tr>
+  <tr><td align = "left" port="2">  -  Hardware</td></tr>
+  <tr><td align = "left" port="0">Inplementazio denbora</td></tr>
+  <tr><td align = "left" port="2">  -  Iraupena</td></tr>
+  <tr><td align = "left" port="2">  -  Proiketuaren kudeaketa trebezia</td></tr>
+  <tr><td align = "left" port="2">  -  Modulu kopurua</td></tr>
+  <tr><td align = "left" port="2">  -  Moduluen eskuragarritasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Osotasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Interoperabilitatea</td></tr>
+  <tr><td align = "left" port="0">Funtzionaltasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Segurtasun maila</td></tr>
+  <tr><td align = "left" port="2">  -  Erbiltzaile kopurua paraleloan</td></tr>
+  <tr><td align = "left" port="2">  -  Xede nagusia</td></tr>
+  <tr><td align = "left" port="2">  -  Gehitutako funtzionaltasunak</td></tr>
+  <tr><td align = "left" port="2">  -  Malgutasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Irekia</td></tr>
+  <tr><td align = "left" port="2">  -  Parametroen esleipenak</td></tr>
+  <tr><td align = "left" port="2">  -  Irekia</td></tr>
+  <tr><td align = "left" port="2">  -  Goi-funtzioen egokitasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Multi hizkuntza eta multigunea</td></tr>
+  <tr><td align = "left" port="2">  -  Baimenen kudeaketa</td></tr>
+  <tr><td align = "left" port="2">  -  Datu-baseen babesa</td></tr>
+  <tr><td align = "left" port="2">  -  Banatutako moduluen kopurua</td></tr>
+  <tr><td align = "left" port="2">  -  Lan estazioen kopurua</td></tr>
+  <tr><td align = "left" port="2">  -  Modulu instalagarri independenteen kopurua</td></tr>
+  <tr><td align = "left" port="2">  -  Zerbitzari desberdinetan instalagarriak diren moduluen kopurua</td></tr>
+  <tr><td align = "left" port="0">Erabilerraza</td></tr>
+  <tr><td align = "left" port="2">  -  Interfaze grafikoa</td></tr>
+  <tr><td align = "left" port="2">  -  Operazio erraztasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Ikasteko erraztasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Erabiltzileentzako eskuliburuak</td></tr>
+  <tr><td align = "left" port="2">  -  Tutorialak</td></tr>
+  <tr><td align = "left" port="2">  -  Entrenamendua</td></tr>
+  <tr><td align = "left" port="2">  -  Arazoak konpontzeko gida</td></tr>  
+  <tr><td align = "left" port="0">Malgutasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Hobekuntzak</td></tr>
+  <tr><td align = "left" port="2">  -  Plataformekiko independentea</td></tr>
+  <tr><td align = "left" port="2">  -  Integratzeko erraztasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Teknologia malgutasuna</td></tr>
+  <tr><td align = "left" port="0">Kalitatea</td></tr>
+  <tr><td align = "left" port="2">  -  Eremu pertsonalizagarriak</td></tr>
+  <tr><td align = "left" port="2">  -  Txosten pertsonalizagarriak</td></tr>
+  <tr><td align = "left" port="2">  -  Interfaze mota</td></tr>
+  <tr><td align = "left" port="2">  -  Programazio lengoaia</td></tr>
+  <tr><td align = "left" port="2">  -  Datu-base kudeatzaile estandarrak</td></tr>
+  <tr><td align = "left" port="2">  -  Komunikazio estandarrak</td></tr>
+  <tr><td align = "left" port="2">  -  Plataforma aniztasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Eskalagarritasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Datuen bistaratzea</td></tr>
+  <tr><td align = "left" port="2">  -  Erroreen informazioa</td></tr>
+  <tr><td align = "left" port="2">  -  Sendotasuna</td></tr>
+  <tr><td align = "left" port="0">Fidagarritasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Egonkortasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Berreskuragarritasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Datuen kopia eta berreskuratze automatikoa</td></tr>
+  <tr><td align = "left" port="2">  -  Teknologia malgutasuna</td></tr>
+  <tr><td align = "left" port="0">Ospea</td></tr>
+  <tr><td align = "left" port="2">  -  Finantza egonkortasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Produktu eta zerbitzuen ospeen hobekuntza</td></tr>
+  <tr><td align = "left" port="2">  -  Erakundearen arrisku txikiagoa</td></tr>
+  <tr><td align = "left" port="0">Esperientzia</td></tr>
+  <tr><td align = "left" port="2">  -  Antzinatasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Iraganeko negozio-esperientzia</td></tr>
+  <tr><td align = "left" port="0">Zerbitzuak</td></tr>
+  <tr><td align = "left" port="2">  -  Bermeak</td></tr>
+  <tr><td align = "left" port="2">  -  Aholkularitza zerbitzua</td></tr>
+  <tr><td align = "left" port="2">  -  Prestakuntza zerbitzua</td></tr>
+  <tr><td align = "left" port="2">  -  Zerbitzuaren abiadura </td></tr>
+  <tr><td align = "left" port="0">Ahalmen teknikoa</td></tr>
+  <tr><td align = "left" port="2">  -  Hobekuntzaz zerbitzu ona</td></tr>
+  <tr><td align = "left" port="2">  -  Inplementazio-erraztasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Ingeniari kopuru egokia</td></tr>
+  <tr><td align = "left" port="2">  -  Inplementazio-esperientzia ona</td></tr>
+  <tr><td align = "left" port="2">  -  Trebetasun teknikoak eta enpresarialak</td></tr>
+  <tr><td align = "left" port="2">  -  Barne ezagutza teknikoak</td></tr>
+  <tr><td align = "left" port="0">Konpromisoa</td></tr>
+  <tr><td align = "left" port="2">  -  Talde-konpromisoa</td></tr>
+  <tr><td align = "left" port="2">  -  Erakunde-konpromisoa</td></tr>
+  <tr><td align = "left" port="0">Oinarrizkoak</td></tr>
+  <tr><td align = "left" port="2">  -  Sistemaren datu-bae eta hardware euskarriak</td></tr>
+  <tr><td align = "left" port="2">  -  Saltzailearen tamaina</td></tr>
+  <tr><td align = "left" port="2">  -  Datu-bae estandarrak</td></tr>
+  <tr><td align = "left" port="0">Erabiltzailearen interesa eta software esperientzia</td></tr>
+  <tr><td align = "left" port="2">  -  Interesa</td></tr>
+  <tr><td align = "left" port="2">  -  Borondatea</td></tr>
+  <tr><td align = "left" port="2">  -  Gaitasun akademikoak</td></tr>
+  <tr><td align = "left" port="2">  -  Erabiltzailearen esperientzia software-lanabesekin</td></tr>
+  <tr><td align = "left" port="2">  -  Erabiltzaileen esperientzia software sistemen eremuan</td></tr>
+  <tr><td align = "left" port="2">  -  Erabiltzaileen esperientzia luzera eta lanbide-gaitasunak</td></tr>
+  <tr><td align = "left" port="0">Software-osagai eta erakundean oinarritutako faktoreak</td></tr>
+  <tr><td align = "left" port="2">  -  Erakundearen datu-basearen espero den tamaina</td></tr>
+  <tr><td align = "left" port="2">  -  Proiektuaren konplexutasuna</td></tr>
+  <tr><td align = "left" port="2">  -  Softwareak erakundearen zerbitzuak emateko behar duen tamaina</td></tr>
+  <tr><td align = "left" port="0">Hardwarean oinarritutako faktoreak</td></tr>
+  <tr><td align = "left" port="2">  -  Zerbitzuak exekutatzeko denbora murriztapenak</td></tr>
+  <tr><td align = "left" port="2">  -  Biltegiraatze nagusiaren muga</td></tr>
+  <tr><td align = "left" port="2">  -  Konputagailuaren erantzun-denbora</td></tr>
+  <tr><td align = "left" port="2">  -  Banda-zabalera erabilgarriaren tamaina</td></tr>
+  <tr><td align = "left" port="2">  -  Komunikazio-gailuen ahalmena</td></tr>
+ 
+</table>>];
+
+
+
+
+
+/* Funtzionalitateen aktoreak */
+
+Aktoreak [label=<
+<table border="0" cellborder="1" cellspacing="0">
+  <tr><td bgcolor="goldenrod3"><i>Aktoreak</i></td></tr>
+  <tr><td port="1">FrankiziaEmaileBuru</td></tr>
+  <tr><td port="2">FrankiziaBuru</td></tr>
+  <tr><td port="3">OnlineEroslea</td></tr>
+  <tr><td port="4">Bankua</td></tr>
+  <tr><td port="5">Zerbitzari</td></tr>
+  <tr><td port="6">Sukaldaria</td></tr>
+  <tr><td port="7">ZerbitzariBuru</td></tr>
+  <tr><td port="8">Irakasle</td></tr>
+  <tr><td port="9">Komertzial</td></tr>
+  <tr><td port="10">Teknikari</td></tr>
+  <tr><td port="11">Informatikari</td></tr>
+</table>>];
+
+/* Funtzionalitateen erabilpen-kasuen eszenarioak */
+
+RFP_betekizunak:2 -> InbentarioaKudeatu [label="Use-cases"];
+RFP_betekizunak:3 -> MenuakKudeatu [label="Use-cases"];
+RFP_betekizunak:4 -> Trebakuntza [label="Use-cases"];
+RFP_betekizunak:5 -> AnalitikaTxostenak [label="Use-cases"];
+RFP_betekizunak:6 -> MarkarenMarketina [label="Use-cases"];
+RFP_betekizunak:7 -> "Egur-labeSukaldeaLokala" [label="Use-cases"];
+RFP_betekizunak:8 -> SistemenIntegrazioa [label="Use-cases"];
+RFP_betekizunak:9 -> FrankiziaOsoaKontrolatu [label="Use-cases"];
+RFP_betekizunak:10 -> SalmentaPresentziala [label="Use-cases"];
+RFP_betekizunak:11 -> SalmentakOnline [label="Use-cases"];
+
+
+Aktoreak:1 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:2 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:3 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:4 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:6 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:7 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:9 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:10 -> SalmentakOnline  [color="bisque3"style="dashed"];
+Aktoreak:11 -> SalmentakOnline  [color="bisque3"style="dashed"];
+
+Aktoreak:2 -> InbentarioaKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:4 -> InbentarioaKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:11 -> InbentarioaKudeatu  [color="bisque3"style="dashed"];
+
+Aktoreak:1 -> MenuakKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:2 -> MenuakKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:6 -> MenuakKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:7 -> MenuakKudeatu  [color="bisque3"style="dashed"];
+Aktoreak:9 -> MenuakKudeatu  [color="bisque3"style="dashed"];
+
+Aktoreak:2 -> Trebakuntza  [color="bisque3"style="dashed"];
+Aktoreak:5 -> Trebakuntza  [color="bisque3"style="dashed"];
+Aktoreak:6 -> Trebakuntza  [color="bisque3"style="dashed"];
+Aktoreak:7 -> Trebakuntza  [color="bisque3"style="dashed"];
+Aktoreak:8 -> Trebakuntza  [color="bisque3"style="dashed"];
+
+Aktoreak:1 -> AnalitikaTxostenak  [color="bisque3"style="dashed"];
+Aktoreak:2 -> AnalitikaTxostenak  [color="bisque3"style="dashed"];
+Aktoreak:9 -> AnalitikaTxostenak  [color="bisque3"style="dashed"];
+Aktoreak:11 -> AnalitikaTxostenak  [color="bisque3"style="dashed"];
+
+Aktoreak:1 -> MarkarenMarketina  [color="bisque3"style="dashed"];
+Aktoreak:2 -> MarkarenMarketina  [color="bisque3"style="dashed"];
+Aktoreak:9 -> MarkarenMarketina  [color="bisque3"style="dashed"];
+Aktoreak:11 -> MarkarenMarketina  [color="bisque3"style="dashed"];
+
+Aktoreak:1 -> "Egur-labeSukaldeaLokala"  [color="bisque3"style="dashed"];
+Aktoreak:2 -> "Egur-labeSukaldeaLokala"  [color="bisque3"style="dashed"];
+Aktoreak:10 -> "Egur-labeSukaldeaLokala"  [color="bisque3"style="dashed"];
+
+Aktoreak:2 -> SistemenIntegrazioa  [color="bisque3"style="dashed"];
+Aktoreak:9 -> SistemenIntegrazioa  [color="bisque3"style="dashed"];
+Aktoreak:11 -> SistemenIntegrazioa  [color="bisque3"style="dashed"];
+
+Aktoreak:1 -> FrankiziaOsoaKontrolatu  [color="bisque3"style="dashed"];
+
+Aktoreak:2 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:4 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:5 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:6 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:7 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:8 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:9 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:10 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+Aktoreak:11 -> SalmentaPresentziala [color="bisque3"style="dashed"];
+
+
+
+
+/* UML diagramak eta arkitektura */
+
+SalmentakOnline ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+InbentarioaKudeatu ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+MenuakKudeatu ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+Trebakuntza ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+AnalitikaTxostenak ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+MarkarenMarketina ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+"Egur-labeSukaldeaLokala" ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+SistemenIntegrazioa ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+FrankiziaOsoaKontrolatu ->  "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+SalmentaPresentziala ->    "OpenUP eta UML arefaktuak":0 [color="cyan" style="dashed"];
+
+SalmentakOnline ->    Arkitektura [color="blue" style="dashed"];
+InbentarioaKudeatu ->    Arkitektura [color="blue" style="dashed"];
+MenuakKudeatu ->    Arkitektura [color="blue" style="dashed"];
+Trebakuntza ->    Arkitektura [color="blue" style="dashed"];
+AnalitikaTxostenak ->    Arkitektura [color="blue" style="dashed"];
+MarkarenMarketina ->    Arkitektura [color="blue" style="dashed"];
+"Egur-labeSukaldeaLokala" ->    Arkitektura [color="blue" style="dashed"];
+SistemenIntegrazioa ->    Arkitektura [color="blue" style="dashed"];
+FrankiziaOsoaKontrolatu ->    Arkitektura [color="blue" style="dashed"];
+SalmentaPresentziala ->      Arkitektura [color="blue" style="dashed"];
+
+
+
+Aktoreak:1 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:2 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:3 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:4 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:5 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:6 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:7 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:8 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:9 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:10 -> Arkitektura:2 [color="green"style="dashed"];
+Aktoreak:11 -> Arkitektura:2 [color="green"style="dashed"];
+
+Arkitektura:2 -> Arkitektura:17 [color="darkred"style="dotted"];
+Arkitektura:17 -> Arkitektura:2 [color="darkred"style="dotted"];
+Arkitektura:17 -> Arkitektura:27 [color="darkred"style="dotted"];
+Arkitektura:27 -> Arkitektura:17 [color="darkred"style="dotted"];
+Arkitektura:17 -> Arkitektura:37 [color="darkred"style="dotted"];
+Arkitektura:37 -> Arkitektura:17 [color="darkred"style="dotted"];
+Arkitektura:27 -> Arkitektura:37 [color="darkred"style="dotted"];
+Arkitektura:37 -> Arkitektura:27 [color="darkred"style="dotted"];
+
+
+RFP_betekizunak -> UserAceptanceTest:2 [color="darkred"style="dashed"];
+Arkitektura -> UserAceptanceTest:14 [color="darkred"style="dashed"];
+
+UserAceptanceTest:14 -> ProposamenarenEbaluazioa [color="darkred"style="dashed"];
+
+}
