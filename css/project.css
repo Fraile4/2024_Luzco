@@ -88,20 +88,23 @@ ol.alpha{list-style-type: lower-alpha}
 ul li
 {
 	list-style-image: url(../images/bullet1.gif);
-	text-indent: +0px	text-align: justify
+	text-indent: +0px;	
+	text-align: justify
 }
 ul ul li
 {
 	list-style-image: url("../images/bullet2.gif");
-	text-indent: +0px	text-align: justify
+	text-indent: +0px;	
+	text-align: justify
 }
 ul ul ul li
 {
 	list-style-image: url("../images/bullet3.gif");        
-	text-indent: +0px	text-align: justify
+	text-indent: +0px;	
+	text-align: justify
 }
-ul.plus{list-style-image: }
-ul.minus{list-style-image: }
+ul.plus{list-style-image: a}
+ul.minus{list-style-image: a}
 ul.ck{list-style-image: url("../images/checkbox.gif");}
 table{}
 td{vertical-align: top}

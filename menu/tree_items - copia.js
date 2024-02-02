@@ -132,5 +132,18 @@ var TREE_ITEMS = [
 				['Erabakien justifikazio txostena', null,],
 			],
 		]
-	]					
+		]					
+	]
 ];
+/* --- end menu items --- */
+// Path: menu/tree_items%20-%20copia.js
+// Compare this snippet from menu/tree_items%20-%20copia%20%282%29.js:
+// 		[' Sistemaren Espezifikazioa',null,
+// 			[' Glosarioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/rup_glossary.pdf'],
+// 			[' Bisioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/Vision.pdf'],
+// 			[' Betebeharren Espezifikazioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/System-Wide_Requirements_Specification.pdf'],
+//
+// 			[' Erabilpen kasuak (jarduera diagramekin)', null,
+// 				[' Centralized Platform',null,],
+// 				[' Centralized Platform (UML)',null,],
+// 				[' Financial Management',null,],
