@@ -139,6 +139,7 @@ var TREE_ITEMS = [
 				[' Manage menu (UML)', '../Proiektua/MemoriarenEranskinak/BasicFlowUseCaseManageMenu.png'],
 				[' Process Order','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Process Order.pdf'],
 				[' Process Order (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
+				[' Use-case','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Standardized Processes and Practices.pdf'],
 				[' Standardized Processes and Practices',null,
 					[' Use-case specification (OpenUP)',null,],
 					[' Activity diagram (UML)',null,],
