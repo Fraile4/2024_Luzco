@@ -148,6 +148,8 @@ var TREE_ITEMS = [
 				],
 			],
 			[' Use Case Model','../Proiektua/SistemarenEspezifikazioa/UML/RSAD/index.html'],
+			['Ikuskaritza', null,
+				['Elaborazioa', '../Proiektua/Ikuskaritzak/2024_Lab1_Proiektu_baten_elaborazioa_20.pdf',],],
 		],
 		
 		[' Aurrekontua', null,

@@ -11,6 +11,7 @@ var TREE_ITEMS = [
 			[' Glosarioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/rup_glossary.pdf'],
 			[' Bisioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/Vision.pdf'],
 			[' Betebeharren Espezifikazioa','../Proiektua/MemoriarenEranskinak/Especificacion del sistema/Requisitos/System-Wide_Requirements_Specification.pdf'],
+			[' Elaborazioa', '../Proiektua/MemoriarenEranskinak/Ikuskaritzak/2024_Lab1_Proiektu_baten_elaborazioa_20.pdf'],
 
 			[' Erabilpen kasuak (jarduera diagramekin)', null,
 				[' Centralized Platform',null,],
