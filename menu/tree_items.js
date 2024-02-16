@@ -42,7 +42,6 @@ var TREE_ITEMS = [
 				],
 				['Bezeroari buruzko informazioa','https://www.amrest-franquicias.com/en/la-tagliatella'],
 				['Bezeroaren proposamen eskaera (Request for proposals - RFP)',null,
-					['Bezeroaren RFP zirriborroa (adibidea)','../Proiektua/MemoriarenEranskinak/rfp-template-government-model.pdf'],
 					['Bezeroarengandik jasotako RFP','../Proiektua/MemoriarenEranskinak/rfp-template-government-model.pdf'],
 				],
 			],
