@@ -121,6 +121,8 @@ var TREE_ITEMS = [
 					[' RFP erantzunen hasierako ebaluazioa','../Proiektua/MemoriarenEranskinak/Software projects proposals evaluation template.pdf'],
 
 				],
+				['Ikuskaritza', null,
+				['Elaborazioa', '../Proiektua/Ikuskaritzak/2024_Lab1_Proiektu_baten_elaborazioa_20.pdf',],],
 			]
 		],
 
@@ -130,13 +132,13 @@ var TREE_ITEMS = [
 			[' Betebeharren Espezifikazioa (systemwide_req_spec)','../Proiektua/SistemarenEspezifikazioa/systemwide_req_spec.pdf'],
 
 			[' Erabilpen kasuak (jarduera diagramekin)', null,
-				[' Centralized Platform','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Centralized Platform for Effective Communication, Training, and Support.pdf'],
-				[' Centralized Platform (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
-				[' Financial Management','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Financial Management.pdf'],
-				[' Financial Management (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
-				[' Manage menu','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Manage menu.pdf'],
-				[' Manage menu (UML)', '../Proiektua/MemoriarenEranskinak/BasicFlowUseCaseManageMenu.png'],
-				[' Process Order','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Process Order.pdf'],
+				//[' Centralized Platform','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Centralized Platform for Effective Communication, Training, and Support.pdf'],
+				//[' Centralized Platform (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
+				//[' Financial Management','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Financial Management.pdf'],
+				//[' Financial Management (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
+				//[' Manage menu','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Manage menu.pdf'],
+				//[' Manage menu (UML)', '../Proiektua/MemoriarenEranskinak/BasicFlowUseCaseManageMenu.png'],
+				//[' Process Order','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Process Order.pdf'],
 				[' Process Order (UML)','../Proiektua/SistemarenEspezifikazioa/glossary.pdf'],
 				[' Use-case','../Proiektua/SistemarenEspezifikazioa/usecase_specification_Standardized Processes and Practices.pdf'],
 				[' Standardized Processes and Practices',null,
@@ -148,8 +150,7 @@ var TREE_ITEMS = [
 				],
 			],
 			[' Use Case Model','../Proiektua/SistemarenEspezifikazioa/UML/RSAD/index.html'],
-			['Ikuskaritza', null,
-				['Elaborazioa', '../Proiektua/Ikuskaritzak/2024_Lab1_Proiektu_baten_elaborazioa_20.pdf',],],
+			
 		],
 		
 		[' Aurrekontua', null,
